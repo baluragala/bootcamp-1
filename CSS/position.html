@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>position</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body class="color display">
+    <h1 style="text-align: center">Position</h1>
+    <div class="mleft">
+        <h3>position properties:</h3>
+        <ul class="list">
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>position:static;</h3>
+        <p> It is always positioned according to the normal flow of the page.</p>
+        <div class="static">
+            position: static;
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>position:relative;</h3>
+        <p> It is positioned relative to its normal position.</p>
+        <div class="relative">
+            position: relative;
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>position:absolute;</h3>
+        <p> It is positioned relative to the nearest positioned ancestor. </p>
+        <div class="arelative">position: relative;
+            <div class="absolute">position: absolute;</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>position:fixed;</h3>
+        <p>It always stays in the same place even if the page is scrolled.</p>
+        <div class="fixed">
+            position: fixed;
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>position:sticky;</h3>
+        <p>It is positioned based on the user's scroll position.</p>
+        <div class="sticky">
+            position: sticky;
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="mleft">
+        <h3>Overlapping Elements:</h3>
+        <img class="image" src="assets/images/flower2.jpg" width="400" height="140" alt="dddd">
+        <p class="para">Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
+</body>
+
+</html>

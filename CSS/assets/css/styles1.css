@@ -1,0 +1,12 @@
+ul li{
+	list-style-type: none;
+	display: block;
+}
+
+
+.background{
+border: 1px solid #ccc;
+background-image: url('../images/person.jpg');
+min-height: 300px;
+background-repeat: no-repeat;
+}

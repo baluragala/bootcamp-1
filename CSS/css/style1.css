@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600');
+
+.wrapper {
+    margin: 10px 30px;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.columnnav {
+    float: left;
+}
+
+.menunav {
+    width: 20%;
+}
+
+.contentnav {
+    width: 80%;
+    margin-left: 260px;
+    overflow-x: hidden;
+    line-height: 1.5;
+    position: absolute;
+    right: 0;
+    background-color: rgba(221, 221, 221, 0.57);
+}
+
+.menupart {
+
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed !important;
+    left: 0;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: rgba(99, 100, 101, 0.87);
+    color: white;
+}
+
+.anchor {
+    text-decoration: none;
+    line-height: 1.8;
+    color: white;
+    padding-left: 10px;
+    display: block;
+}
+
+
+.menupart a:hover {
+    color: #000000;
+    background-color: #b5b5b5;
+    border-radius: 3px;
+}
+
+.demo-block {
+    background-color: #bfd0d5;
+    padding: 20px 20px;
+    max-width: 60%;
+    border-radius: 3px;
+    position: relative;
+}
+
+#username {
+    border: 1px solid #971c1c;
+    border-radius: 3px;
+}
+
+.demo-block #username {
+    padding: 10px;
+}
+
+.demo-block ol>.list-item {
+    color: #2e7233;
+}
+
+.demo-block ol+.list-item {
+    color: red;
+}
+
+.demo-block input[type] {
+    box-shadow: 0 0 29px 2px #9b9595;
+}
+
+.demo-block:before {
+    content: "Pseudo";
+    right: 0;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+    background-color: #686363;
+}
+
+.demo-block ol .list-item:nth-child(2) {
+    background: rgba(158, 158, 158, 0.56);
+}
+
+.paragraph::first-letter {
+    font-size: 300%;
+    color: #8A2BE2;
+}
+
+.clr-div-red {
+    background-color: tomato;
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    border: 4px solid #2b9332;
+}
+
+.clr-div-red.bg-img {
+    background-image: url(../assets/images/flower2.jpg);
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.spacings {
+    height: 70px;
+    padding-top: 20px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(60, 47, 43, 0.49);
+    border: 10px solid #87caaa;
+    border-bottom: 10px solid gray;
+    border-top: 10px solid gray;
+}
+
+.box {
+    height: 70px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(60, 47, 43, 0.55);
+    border: 10px solid #87caaa;
+    outline: 5px dashed #598d59;
+}
+
+.layout {
+    display: inline-block;
+    height: 70px;
+    width: 200px;
+    background-color: rgba(241, 241, 241, 0.75);
+    border: 1px solid #a7a2a2;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.static {
+    position: static;
+    border: 2px solid gray;
+}
+
+.relative {
+    position: relative;
+    border: 2px solid gray;
+    top: 0;
+    margin-bottom: 2000px;
+}
+
+.absolute {
+    position: absolute;
+    border: 2px solid gray;
+    top: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    border: 2px solid gray;
+}
+
+.fixed {
+    position: fixed;
+    border: 2px solid #cacac8;
+    top: 50px;
+    color: #fff;
+    right: 0;
+    background: rgba(85, 65, 65, 0.71);
+}
+
+.fixed div {
+    height: 56px;
+    width: 132px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.abs {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+    bottom: 0px;
+    padding: 5px;
+    width: 50%;
+    background-color: #c1d9df;
+    border: 2px solid #367f86;
+}
+
+
+.image1 {
+    float: right;
+}
+
+.image2 {
+    float: left;
+}
+
+.image3 {
+    float: none;
+}
+
+.div3 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 3px solid #607D8B;
+}
+
+.div4 {
+    border: 2px solid #607D8B;
+    clear: left;
+}
+
+.classdiv {
+    border: 3px solid #607D8B;
+    padding: 5px;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.header,
+.footer {
+    background-color: #607D8B;
+    color: white;
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    width: 25%;
+}
+
+.content {
+    width: 75%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #607D8B;
+    color: #ffffff;
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+
+
+
+/*text-overflow*/
+
+
+/*text effects file starts here*/
+
+.testover1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.testover2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testover3 {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.testover3:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+.testword {
+    width: 11em;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+
+.testwords {
+    width: 11em;
+    border: 1px solid #000000;
+}
+
+.testword1 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+.testword2 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+
+
+
+/*link file starts*/
+
+
+/*a:link {
+    color: red;
+}*/
+
+
+/*a:visited {
+    color: green;
+}
+*/
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: blue;
+}
+
+.alink {
+    color: blue;
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.fright {
+
+    float: right;
+    margin-right: 150px;
+}
+
+.linkbutton {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+
+a:active {
+    color: red
+}
+
+
+
+
+/*list file starts here*/
+
+.a {
+    list-style-type: circle;
+}
+
+.b {
+    list-style-type: square;
+}
+
+.c {
+    list-style-type: upper-roman;
+}
+
+.d {
+    list-style-type: lower-alpha;
+}
+
+.floatright {
+    float: right;
+    margin-right: 300px;
+}
+
+.secondlist {
+    clear: both;
+    float: left;
+}
+
+.thirdlist {
+    float: right;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+.positionproperty {
+    list-style-position: inside;
+}
+
+.typeproperty {
+    list-style-type: none;
+}
+
+.orderlist {
+    background: #9E9E9E;
+    padding: 20px;
+}
+
+.unorderlist {
+    background: #009688;
+    padding: 20px;
+}
+
+.orderli {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+.unorderli {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+
+
+
+/*table file starts here*/
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.border {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #607D8B;
+    color: white;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.width {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.head {
+    height: 70px;
+}
+
+.tableres {
+    border-collapse: collapse;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.align {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+
+/*transition file starts here*/
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background: #607D8B;
+    transition: width 2s, height 4s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 150px;
+}
+
+.transition2 {
+    width: 100px;
+    height: 100px;
+    background: #607D8B;
+    -webkit-transition: width 2s;
+    /* Safari */
+    transition: width 2s;
+}
+
+.transition21 {
+    transition-timing-function: linear;
+}
+
+.transition22 {
+    transition-timing-function: ease;
+}
+
+.transition23 {
+    transition-timing-function: ease-in;
+}
+
+.transition24 {
+    transition-timing-function: ease-out;
+}
+
+.transition25 {
+    transition-timing-function: ease-in-out;
+}
+
+.transition2:hover {
+    width: 500px;
+}
+
+.transition3 {
+    width: 100px;
+    height: 100px;
+    background: #607D8B;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.transition3:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
+}
+
+.transition4 {
+    width: 100px;
+    height: 100px;
+    background: #607D8B;
+    -webkit-transition: width 3s;
+    /* Safari */
+    -webkit-transition-delay: 1s;
+    /* Safari */
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+.transition4:hover {
+    width: 300px;
+}
+
+.animationeffect {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: #ccc;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 100px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+
+
+
+/*gradients*/
+
+.gradiantseffect {
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(#b227eb, #51c64f);
+}
+
+.gradiantseffect2 {
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(#00ffe7, #FFC107, #E91E63);
+}
+
+.alignvertical {
+    width: 36%;
+    border: 1px solid #1875a9;
+    padding: 10px;
+    background-color: #b8cdd9;
+    border-radius: 3px;
+    color: #103b53;
+    text-transform: capitalize
+}
+
+
+
+
+/*transitions*/
+
+
+/*rounded corners */
+
+.rcorners1 {
+    border-radius: 25px;
+    background: #607D8B;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.rcorners3 {
+    border-radius: 25px;
+
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.rcorners33 {
+    border-radius: 50%;
+    background: #607D8B;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.rcorners22 {
+    border-radius: 30px 50px 15px;
+    background: #607D8B;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+/*rounded corners */
+
+
+/*Text shadow with color*/
+
+.tshadowcolor {
+    text-shadow: 2px 2px red;
+}
+
+.tshadowblur {
+    text-shadow: 2px 2px 5px red;
+}
+
+.multishadow {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.borderaroundtest {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.boxshadow {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: #20b5ed;
+    box-shadow: 3px 1px 13px 28px rgba(171, 171, 171, 0.32);
+}
+
+
+
+
+
+/*opacity file starts here*/
+
+.oimage1 {
+    opacity: 0.2;
+    width: 250px;
+    height: 200px;
+}
+
+.oimage2 {
+    opacity: 0.5;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.oimage3 {
+    opacity: 1;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+
+.firstdiv {
+    opacity: 0.1;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.seconddiv {
+    opacity: 0.3;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.thirddiv {
+    opacity: 0.6;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.div {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.background {
+    background: url(https://cdn-images-1.medium.com/max/400/1*nNZmrUJRH0iQEUFyRzg4Kg.jpeg);
+    border: 2px solid black;
+}
+
+
+
+
+
+
+/*overflow styles*/
+
+.first {
+    margin-left: 30px;
+
+    float: left;
+}
+
+.second {
+    margin-left: 40px;
+
+    float: left;
+}
+
+.third {
+    float: left;
+    margin-left: 40px;
+}
+
+.fourth {
+    float: left;
+    margin-left: 40px;
+}
+
+.color {
+    background-color: rgba(96, 125, 139, 0.13);
+}
+
+.fifth {
+
+    margin-left: 30px;
+    margin-top: 50px;
+    float: left;
+}
+
+.sixth {
+    margin-left: 40px;
+    margin-top: 50px;
+    float: left;
+}
+
+.list {
+    list-style-type: none;
+}
+
+
+
+
+/*overflow file css*/
+
+.overflow {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow: visible;
+}
+
+.hidden {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow: hidden;
+}
+
+.scroll {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow: scroll;
+}
+
+.auto {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow: auto;
+}
+
+.x {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.y {
+    background-color: rgba(103, 156, 182, 0.42);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    color: #454749;
+    font-size: 15px;
+    border: 3px dashed #3985a5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
+/*overflow ends*/
+
+
+/*CSS Layout  satrts*/
+
+.css-layout div {
+    text-align: center;
+}
+
+.div {
+    min-height: 40px;
+}
+
+.col-1 {
+    width: 8.33333333%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-2 {
+    width: 16.66666667%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+
+.col-3 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-4 {
+    width: 33.33333333%;
+    float: left;
+    padding: 10px;
+    display: flex;
+    display: flex;
+}
+
+
+.col-5 {
+    width: 41.66666667%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-7 {
+    width: 58.33333333%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-8 {
+    width: 66.66666667%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-9 {
+    width: 75%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-10 {
+    width: 83.33333333%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-11 {
+    width: 91.66666667%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    display: flex;
+}
+
+.navigation {
+    background-color: #6c6969;
+    color: #fff;
+    min-height: 70px;
+    text-align: center;
+}
+
+.side {
+    background: rgba(124, 115, 115, 0.27);
+    min-height: 463px;
+    height: 100%;
+    text-align: center;
+}
+
+.middel-content {}
+
+.footer-bar {
+    background-color: #03A9F4;
+    height: auto;
+    min-height: 50px;
+}
+
+.col-6.block-1 {
+    background-color: #c6aac3;
+    height: 100px;
+}
+
+.col-6.block-2 {
+    background-color: #c6aac3;
+    height: 100px;
+}
+
+
+
+/*CSS Layout  ends*/
+
+.fonttable {
+
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+.fontrow {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}

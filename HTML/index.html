@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles1.css">
+    <style type="text/css">
+    .all-elements li {
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- index content strts -->
+    <div class="column menu menupart">
+        <ol type="1">
+            <li><a class="anchor" href="#html">What is HTML?</a></li>
+            <li><a class="anchor" href="#elements"> HTML Elements</a></li>
+            <li><a class="anchor" href="#attributes"> HTML Attributes</a></li>
+            <li><a class="anchor" href="#Headings"> HTML Headings</a></li>
+            <li><a class="anchor" href="#Paragraphs"> HTML Paragraphs</a></li>
+            <li><a class="anchor" href="#Comments"> HTML Comments</a></li>
+            <li><a class="anchor" href="#images"> HTML Images</a></li>
+            <li><a class="anchor" href="#FilePaths"> HTML FilePaths</a></li>
+            <li> <a class="anchor" href="#Tables">HTML Tables</a></li>
+            <li> <a class="anchor" href="#Lists">HTML Lists</a></li>
+            <li> <a class="anchor" href="#blockandinlineelements">HTML Block and Inline Elements</a></li>
+            <li> <a class="anchor" href="#SymbolEntities">HTML Symbol Entities</a></li>
+            <li> <a class="anchor" href="#entities">HTML Entities</a></li>
+            <li> <a class="anchor" href="#Styles">HTML Styles</a></li>
+            <li> <a class="anchor" href="#JavaScript">HTML JavaScript</a></li>
+            <li> <a class="anchor" href="#FilePaths">HTML Linking files</a></li>
+            <li>
+                <a class="anchor" href="#htmlforms">HTML Forms</a>
+                <ol type="A">
+                    <li><a class="anchor" href="#inputTypes">Input types</a></li>
+                </ol>
+            </li>
+            <li>
+                <a class="anchor" href="#html5introduction">HTML5 Introduction</a>
+                <ol type="A">
+                    <li> <a class="anchor" href="#html5introduction"> New Elements </a></li>
+                    <li><a class="anchor" href="#html5introduction">Semantic elements</a></li>
+                </ol>
+            </li>
+            <li>
+                <a class="anchor" href="#images">HTML5 Media</a>
+                <ol type="A">
+                    <li>
+                        <a class="anchor" href="#audio">Audio</a>
+                    </li>
+                    <li><a class="anchor" href="#video">Video</a></li>
+                </ol>
+            </li>
+            <li> <a class="anchor" href="#html5forms">HTML HTML5  forms</a></li>
+            <li> <a class="anchor" href="#html5deprecated">HTML deprecated elementts</a></li>
+            <li> <a class="anchor" href="#inputelementts">HTML input elementts</a></li>
+        </ol>
+    </div>
+    <!-- index content ends -->
+    <!-- Main content starts -->
+    <div class="column content">
+        <h1 id="html" style="text-align: center"><b>HTML</b></h1>
+        <ol type="1">
+            <!-- <h1 id="HTML">PART-A :</h1> -->
+            <li>
+                <!-- What is HTML -->
+                <h3>What is HTML :</h3>
+            </li>
+            <div><b>HTML</b> is a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</div>
+            <div>It stands for Hyper Text Markup Language to build Web pages</div>
+            <div>It has starting tag and ending tag with forward slash</div>
+            <div>
+                !DOCTYPE - is the document type
+            </div>
+            <br>
+            <li>
+                <h3>Structure of HTML :</h3>
+            </li>
+            <div>Every Html program contain two parts they are</div>
+            <ul>
+                <li><b>1.Head part</b> <small> (not visible on web page)</small></li>
+                <ul>
+                    <li>a. Meta tags </li>
+                    <li>b. Scripting tags</li>
+                    <li>c. Eternal File links</li>
+                    <li>d. Non Script tags</li>
+                    <li>e. Base tags</li>
+                    <li>f. Title tags</li>
+                    <li>g. Style tags</li>
+                </ul>
+                <li>
+                    <b>2.Body part</b><small> (visible on web page)</small>
+                    <div>all elements mostly </div>
+                </li>
+                <!-- What is HTML starts-->
+                <!-- HTML Elements ends-->
+                <li>
+                    <h3 id="elements">HTML Elements</h3>
+                </li>
+                <h4> elements with examples</h4>
+                <ol type="A" class="all-elements">
+                    <li><b>&lt;body&gt;</b>Body tag used for document's content</li>
+                    <li><b>&lt;a&gt;</b> <a href="#">iam an anchor link tag to navigate any address</a></li>
+                    <li><b>&lt;abbr&gt;</b>The
+                        <abbr title="World Health Organization">WHO</abbr> was founded in 1948
+                    </li>
+                    <li>
+                        <address><b>&lt;address&gt;</b> Written by <a href="#">sloman</a>.
+                            <br> Visit us at:
+                            <br> sample.com
+                            <br> Box 564, secundrabad
+                            <br> HYD
+                        </address>
+                    </li>
+                    <li>
+                        <article><b>&lt;article&gt;</b>Article tag specifies independent, self-contained content</article>
+                    </li>
+                    <li>
+                        <aside> <b>&lt;aside&gt;</b>tag defines some content aside from the content it is placed in like adds</aside>
+                    </li>
+                    <h3 id="audio">Audio:</h3>
+                    <li>
+                        <div>this tag defines audio, such as music or other audio streams.</div>
+                        <audio controls>
+                            <source src="paste audio file addredd" type="audio/ogg">
+                        </audio>
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th style="width:50%">File Format</th>
+                                    <th style="width:50%">Media Type</th>
+                                </tr>
+                                
+                                <tr>
+                                    <td>MP3</td>
+                                    <td>audio/mpeg</td>
+                                </tr>
+                                <tr>
+                                    <td>Ogg</td>
+                                    <td>audio/ogg</td>
+                                </tr>
+                                <tr>
+                                    <td>Wav</td>
+                                    <td>audio/wav</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h3>HTML Audiotags:</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th style="width:150px">Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td><a>&lt;audio&gt;</a></td>
+                                    <td>Defines sound content</td>
+                                </tr>
+                                <tr>
+                                    <td><a>&lt;source&gt;</a></td>
+                                    <td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <br>
+                    <li><b><b>&lt;b&gt;</b> this is bold text in b tag</b>
+                    </li>
+                    <li>
+                        <base href="#" target=""> this is default navigation if nothing specified in head tag
+                    </li>
+                    <li>
+                        <bdi><b>&lt;bdi&gt;</b>bidirection</bdi>
+                    </li>
+                    <li> </li>
+                    <li><b>&lt;bdo&gt;</b>
+                        <bdo dir="rtl">bi-directional tag with directions like rtl , ltr attributes</bdo>
+                    </li>
+                    <li>
+                        <bdo dir="ltr">bi-directional tag with directions like rtl , ltr attributes</bdo>
+                    </li>
+                    <li>
+                        <blockquote cite="#"><b>&lt;blockquote&gt;</b> The element defines a block of text that is a direct quotation. The element should be used when a quotation is presented inline with the surrounding text, but when the quotation is presented as a separate paragraph, ...
+                        </blockquote>
+                    </li>
+                    <li><b>&lt;br&gt;</b> This tag inserts a single line break, end tag</li>
+                    <li>
+                        <button type="button">iam button</button>
+                    </li>
+                    <br>
+                    <li>
+                        <div><b>&lt;canvas&gt;</b>canvas is uesd to draw graphics, on the fly, via scripting</div>
+                        <canvas id="myCanvas"> canvas</canvas>
+                        <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.fillStyle = "#51a537";
+                        ctx.fillRect(0, 0, 80, 80);
+                        </script>
+                    </li>
+                    <li><code><b>&lt;code&gt;</b>A piece of computer code</code> </li>
+                    <li>
+                        <div>element with pre-defined options in a datalist tag to provide an "autocomplete" feature on input elements.
+                        </div>
+                        <input list="browsers">
+                        <datalist id="numbers">
+                            <option value="one">
+                                <option value="two">
+                                    <option value="three">
+                                        <option value="four">
+                                            <option value="five">
+                        </datalist>
+                    </li>
+                    <li>
+                        <div>a footer for a document or section</div>
+                        <footer><b>&lt;footer&gt;</b>
+                            <p>footer content goes here</p>
+                        </footer>
+                    </li>
+                    <li><b>&lt;hr&gt;</b>bellow an horizontal line
+                        <hr> </li>
+                    <li>
+                        <kbd><b>&lt;kbd&gt;</b> It is keyboard tag</kbd>
+                    </li>
+                    <li>
+                        <label for="male"><b>&lt;label&gt;</b>tag defines a label for an input element, A label can be bound to an element either by using the "for" attribute, or by placing the element inside the label element.</label>
+                    </li>
+                    <li>
+                        <div><b>&lt;nav&gt;</b>nav tag defines a set of navigation links</div>
+                        <nav>
+                            <a href="#">HTML</a> |
+                            <a href="#">CSS</a> |
+                            <a href="#">JavaScript</a> |
+                            <a href="#">jQuery</a>
+                        </nav>
+                    </li>
+                    <h3 id="video">Video:</h3>
+                    <li>
+                        <div><b>&lt;video&gt;</b>video tag used for rendering video</div>
+                        <video width="320" height="240" autoplay controls>
+                            <source src="video-bg-fs.html" type="video/mp4">
+                        </video>
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th style="width:50%">File Format</th>
+                                    <th style="width:50%">Media Type</th>
+                                </tr>
+                                <tr>
+                                    <td>MP4</td>
+                                    <td>video/mp4</td>
+                                </tr>
+                                <tr>
+                                    <td>WebM</td>
+                                    <td>video/webm</td>
+                                </tr>
+                                <tr>
+                                    <td>Ogg</td>
+                                    <td>video/ogg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h3>HTML Videotags:</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th style="width:20%">Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td><a>&lt;video&gt;</a></td>
+                                    <td>Defines a video or movie</td>
+                                </tr>
+                                <tr>
+                                    <td><a>&lt;source&gt;</a></td>
+                                    <td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td><a>&lt;track&gt;</a></td>
+                                    <td>Defines text tracks in media players</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ol>
+                <!-- HTML Elements -->
+            </ul>
+            <!-- HTML Attributes  starts-->
+            <li>
+                <h3 id="attributes">HTML attributes :</h3> </li>
+            <div>
+                All HTML elements can have attributes in starting tag to provide additional information about that element
+                <ol type="i">
+                    <li> <b> href ="" :</b><span> To link an address</span> </li>
+                    <li><b> src="" :</b> <span>path to load an file</span> </li>
+                    <li> <b> width="" :</b> <span> to specify the width of the element</span> </li>
+                    <li> <b>height="" :</b> <span>to specify the height of the element</span> </li>
+                    <li> <b> style="" :</b> <span> to give inline style </span> </li>
+                    <li> <b> lang="" :</b> <span> specifies language  used in document</span> </li>
+                    <li> <b> title="" :</b> <span> tooltip text to help you to know about element</span> </li>
+                    <li> <b> class="" :</b> <span> to identify an element using class name</span> </li>
+                    <li> <b> id="" :</b> to identify an element using id name<span></span> </li>
+                    <li> <b> alt="" :</b> alternative text if image not avilable<span></span> </li>
+                    <li> <b>many more . . . </b></li>
+                </ol>
+            </div>
+            <!-- HTML Attributes ends -->
+            <!-- HTML Headding starts -->
+            <li>
+                <h3 id="Headings">HTML Headdings :</h3>
+            </li>
+            <div> we have 6 types of headding elements inhtml</div>
+            <h1>This is Heading with h1 tag</h1>
+            <h2>This is Heading with h2 tag</h2>
+            <h3>This is Heading with h3 tag</h3>
+            <h4>This is Heading with h4 tag</h4>
+            <h5>This is Heading with h5 tag</h5>
+            <h6>This is Heading with h6 tag</h6>
+            <!-- HTML Headding ends -->
+            <!-- HTML Paragraphs starts -->
+            <li>
+                <h3 id="Paragraphs">HTML Paragraphs :</h3></li>
+            <div> we use "p" tag to display paragraph</div>
+            <div> the number of lines, spaces will be ignored by the browser and considers onlyone space b/w letters</div>
+            <div>The number of lines in a paragraph depends on the size of the browser window or we can use line break to start a new line</div>
+            <!-- HTML Paragraphs ends -->
+            <!-- HTML Comments starts -->
+            <li>
+                <h3 id="Comments">HTML Comments :</h3></li>
+            <div>Comment tags are used to include comments in the HTML source code to uderstand code stsucture and parts to give more information</div>
+            <div> we use symbol for commenting </div>
+            <!-- HTML Comments ends -->
+            <!-- HTML Links starts -->
+            <li>
+                <h3>HTML Links :</h3></li>
+            <div> we use hyperlinks to navigate to any other document, we can apply to any image, content, headding,any element.. .
+                <br>they have target attribute to specify how to navigate.</div>
+            <br>
+            <ol type="a">
+                <li> <b>_blank</b> - Opens the linked document in a new window or tab</li>
+                <li><b>_self</b> - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+                <li> <b>_parent</b> - Opens the linked document in the parent frame
+                </li>
+                <li> <b>_top</b> - Opens the linked document in the full body of the window
+                </li>
+                <li><b>framename</b> - Opens the linked document in a named frame
+                </li>
+            </ol>
+            <!-- HTML Links ends -->
+            <!-- HTML Images starts -->
+            <li>
+                <h3 id="images">HTML Images :</h3></li>
+            <div>Resize the window to display different images for different sizes</div>
+            <img src="assets/images/flower1.jpeg" alt="Flowers in Chania" width="260" height="245">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="assets/images/flower1.jpeg">
+                <source media="(min-width: 850px)" srcset="assets/images/flower2.jpg">
+                <source media="(min-width: 565px)" srcset="assets/images/flower3.jpeg">
+                <!-- <img src="assets/images/bird1.jpg" width="506" height="345" alt="bird"> -->
+                <img src="assets/images/flower1.jpeg" width="506" height="350" alt="bird image(alternative text if image not avilable)">
+                <figcaption>figure caption flower </figcaption>
+                </figure>
+            </picture>
+            <br>
+            <h4 id="FilePaths">File Paths :</h4>
+            <img src="assets/images/FILEPATHS.png" height="" width="" style="border: 1px solid lightgray;padding:20px;">
+            <p>1.To link from contents.html to tips.html (in the resources subfolder), use the relative path resources/tips.html. At each slash (/), you move down one level in the folder hierarchy.</p>
+            <p>2.To link from contents.html to index.html (in the parent folder, one level above contents.html), use the relative path ../index.html. Two dots and a slash (../) moves you up one level in the folder hierarchy.</p>
+            <p>3.To link from contents.html to catalog.html (in a different subfolder of the parent folder), use the relative path ../products/catalog.html. Here, ../ moves you up to the parent folder, and products/ moves you down to the products subfolder.</p>
+            <!-- HTML Images ends -->
+            <!-- HTML Tabel ends -->
+            <li>
+                <h3 id="Tables">HTML Tables :</h3></li>
+            <table>
+                <caption>caption for this tabel</caption>
+                <tr>
+                    <th>tabel header</th>
+                    <th>tabel header</th>
+                    <th>tabel header</th>
+                </tr>
+                <tr>
+                    <td>data cell</td>
+                    <td>data cell </td>
+                    <td>data cell </td>
+                </tr>
+                <tr>
+                    <td>data cell</td>
+                    <td>data cell</td>
+                    <td>data cell </td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>data cell</td>
+                    <td>data cell</td>
+                </tr>
+            </table>
+            <!-- HTML Tabel ends -->
+            <!-- HTML Lists starts -->
+            <li>
+                <h3 id="Lists">HTML Lists :</h3></li>
+            <h4>An Unordered Lists</h4>
+            <div>we can make nested lists also..</div>
+            <ul>
+                <li>first list item in ul tag</li>
+                <li>second list item in ul tag</li>
+                <li>third list item in ul tag</li>
+            </ul>
+            <h4>An Ordered List</h4>
+            <div>Type of item will be having some options like A , a , I , i . . .</div>
+            <ol type="1">
+                <li>
+                    <ol type="A">
+                        <li> nested ol item</li>
+                        <li>
+                            <ol type="i">
+                                <li>inner item</li>
+                                <li>inner item</li>
+                                <li>inner item</li>
+                            </ol>
+                        </li>
+                        <li> nested ol item</li>
+                    </ol>
+                </li>
+                <li> list item in ol</li>
+                <li> list item in ol</li>
+            </ol>
+            <h4>data description list :-</h4>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl>
+            <!-- HTML Lists ends -->
+            <!-- HTML HTML Block and Inline Elements starts -->
+            <li>
+                <h3 id="blockandinlineelements">Block and Inline Elements</h3></li>
+            <ol>
+                <li>Block level elements :</li>
+                <div>By default, block-level elements begin on new lines, these elements create larger structures (than inline elements)
+                    <br>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</div>
+                <h5>Examples of block level elements :</h5>
+                <div>address , article , aside , blockquote , canvas , dd , div , dl , dt , fieldset , figcaption , figure , footer , form , h1-h6 ,header ,hr ,li , main ,nav , noscript , ol , output , p , pre , section , table , tfoot , ul , video</div>
+                <h5>Example :</h5>
+                <p> Paragraph is ablock level element with bottom margin 16px</p>
+                <address>address tag is block level element</address>
+                <div> div is also a basic block level element</div>
+                <br>
+                <li>Inline Elements</li>
+                <div>By default, inline elements do not begin on new lines, inline elements create shorter structures (than block level elements).</div>
+                <pre>
+         b, big, i, small, tt abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var ,a, bdo,
+         br, img, map, object, q, script, span, sub, sup button, input, label, select, textarea
+         </pre>
+                <h5>Examples :</h5>
+                <span> Paragraph is inline level element</span>
+                <small>small tag is inline level element</small>
+                <code> code is also  block inline element</code>
+            </ol>
+            <!-- HTML HTML Block and Inline Elements ends -->
+            <!--   HTML Symbol Entities starts -->
+            <li>
+                <h3 id="SymbolEntities">HTML Symbol Entities :</h3></li>
+            <pre>
+ HTML symbols like mathematical operators, arrows, technical symbols and shapes, are not present on a normal keyboard.
+ To add these symbols to an HTML page, you can use the HTML entity name.
+ If no entity name exists, you can use the entity number.
+ If the character does not have an entity name, you can use a decimal (or hexadecimal) reference.
+         </pre>
+            <br>
+            <h3>Some of the examples:</h3>
+            <table>
+                <tbody style="text-align: center">
+                    <tr>
+                        <th style="width:10%">Char</th>
+                        <th style="width:10%">Number</th>
+                        <th style="width:15%">Entity</th>
+                        <th style="width:15%">Description</th>
+                    </tr>
+                    <tr>
+                        <td>∀</td>
+                        <td>&amp;#8704;</td>
+                        <td>&amp;forall;</td>
+                        <td>for all</td>
+                    </tr>
+                    <tr>
+                        <td>∂</td>
+                        <td>&amp;#8706;</td>
+                        <td>&amp;part;</td>
+                        <td> part</td>
+                    </tr>
+                    <tr>
+                        <td>∃</td>
+                        <td>&amp;#8707;</td>
+                        <td>&amp;exist;</td>
+                        <td> exist</td>
+                    </tr>
+                    <tr>
+                        <td>∅</td>
+                        <td>&amp;#8709;</td>
+                        <td>&amp;empty;</td>
+                        <td> empty</td>
+                    </tr>
+                    <tr>
+                        <td>∇</td>
+                        <td>&amp;#8711;</td>
+                        <td>&amp;nabla;</td>
+                        <td> nabla</td>
+                    </tr>
+                    <tr>
+                        <td>∈</td>
+                        <td>&amp;#8712;</td>
+                        <td>&amp;isin;</td>
+                        <td> isin</td>
+                    </tr>
+                    <tr>
+                        <td>∉</td>
+                        <td>&amp;#8713;</td>
+                        <td>&amp;notin;</td>
+                        <td>notin </td>
+                    </tr>
+                    <tr>
+                        <td>∋</td>
+                        <td>&amp;#8715;</td>
+                        <td>&amp;ni;</td>
+                        <td> ni</td>
+                    </tr>
+                    <tr>
+                        <td>∏</td>
+                        <td>&amp;#8719;</td>
+                        <td>&amp;prod;</td>
+                        <td> prod</td>
+                    </tr>
+                    <tr>
+                        <td>∑</td>
+                        <td>&amp;#8721;</td>
+                        <td>&amp;sum;</td>
+                        <td> sum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--   HTML Symbol Entities ends -->
+            <!--   HTML styles starts -->
+            <li>
+                <h3 id="Styles">HTML styles :</h3>
+            </li>
+            <div style="height: 100px;
+            background-color: #e1761b;
+            color: #ffffff;
+            width: 300px;
+            padding: 10px;">
+                <p style="font-size: 20px;font-weight: bold;">Iam a inline styled paragraph inside a div </p>
+            </div>
+            <!--   HTML styles ends -->
+            <!-- HTML JavaScript  starts-->
+            <li>
+                <h3 id="JavaScript">HTML JavaScript</h3></li>
+            <div>"script" tag is used for define a client-side script c,it contains scripting statements, or it loads external script file , Here is one example</div>
+            <br>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                Click on me for Date and Time </button>
+            <p id="demo"></p>
+            <!-- HTML JavaScript  ends-->
+            <!-- HTML Forms  starts-->
+            <li>
+                <h3 id="htmlforms">HTML Forms :</h3></li>
+            <form>
+                <fieldset>
+                    <legend>Personal information:</legend>
+                    First name:
+                    <br>
+                    <input type="text" name="firstname" value="value1">
+                    <br> Last name:
+                    <br>
+                    <input type="text" name="lastname" value="value1">
+                    <br>
+                    <br>
+                    <input type="radio" name="gender" value="other"> Other
+                    <input type="checkbox" name="vehicle2" value="Car"> check me
+                    <br>
+                    <br>
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="option1">
+                            <option value="option2">
+                                <option value="option3">
+                                    <option value="option4">
+                                        <option value="option4">
+                    </datalist>
+                    <input type="button" value="select">
+                    <br>
+                    <br>
+                    <textarea type="textarea" rows="3" placeholder="Type text here . . ."></textarea>
+                    <br>
+                    <input type="button" value="Submit">
+                </fieldset>
+            </form>
+            <!-- HTML Forms  ends-->
+            <br>
+        </ol>
+        <!-- Main content ends (basic html)-->
+        <!-- HTML5 elements content  starts-->
+        <ol>
+            <!-- <h1 id="HTML5Elements">PART-B :</h1> -->
+            <h2 id="html5introduction">  &nbsp;HTML5 Elements :</h2>
+            <li>
+                <h3>Semantic/Structural Elements </h3></li>
+            <p> HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications. This set is sometimes called HTML5 & friends and often shortened to just HTML5.</p>
+            <dt>article</dt>
+            <dd>an article in a document</dd>
+            <br>
+            <dt> aside</dt>
+            <dd> Defines content aside from the page content</dd>
+            <br>
+            <dt> bdi</dt>
+            <dd>Isolates a part of text that might be formatted in a different direction from other text outside it </dd>
+            <br>
+            <dt> details</dt>
+            <dd> Defines additional details that the user can view or hide</dd>
+            <br>
+            <dt>dialog </dt>
+            <dd>Defines a dialog box or window</dd>
+            <br>
+            <dt> figcaption</dt>
+            <dd>Defines a caption for a figure element </dd>
+            <br>
+            <dt> figure</dt>
+            <dd> Defines self-contained content</dd>
+            <br>
+            <dt> footer</dt>
+            <dd> Defines a footer for a document or section</dd>
+            <br>
+            <dt>header </dt>
+            <dd> Defines a header for a document or section</dd>
+            <br>
+            <dt>main </dt>
+            <dd> Defines the main content of a document</dd>
+            <br>
+            <dt> mark</dt>
+            <dd> Defines marked/highlighted text</dd>
+            <br>
+            <dt>menuitem </dt>
+            <dd>Defines a command/menu item that the user can invoke from a popup menu </dd>
+            <br>
+            <dt> meter</dt>
+            <dd> Defines a scalar measurement within a known range (a gauge)nav</dd>
+            <br>
+            <dt>nav </dt>
+            <dd> Defines navigation links</dd>
+            <br>
+            <dt> progress</dt>
+            <dd> Represents the progress of a task</dd>
+            <br>
+            <dt>rp </dt>
+            <dd> Defines what to show in browsers that do not support ruby annotations</dd>
+            <br>
+            <dt> rt</dt>
+            <dd> Defines an explanation/pronunciation of characters (for East Asian typography)</dd>
+            <br>
+            <dt> ruby</dt>
+            <dd> Defines a ruby annotation (for East Asian typography)</dd>
+            <br>
+            <dt>section </dt>
+            <dd>Defines a section in a document </dd>
+            <br>
+            <dt> summary</dt>
+            <dd> Defines a visible heading for a details element</dd>
+            <br>
+            <dt> time</dt>
+            <dd> Defines a date/time</dd>
+            <br>
+            <dt> wbr</dt>
+            <dd> Defines a possible line-break</dd>
+            <br>
+            <li>
+                <h3> Form Elements</h3></li>
+            <dt> datalist</dt>
+            <dd> Specifies a list of pre-defined options for input controls</dd>
+            <br>
+            <dt>output </dt>
+            <dd> Defines the result of a calculation</dd>
+            <br>
+            <li>
+                <h3 id="inputTypes"> Input Types :</h3></li>
+            <dt> </dt>
+            <dd> </dd>
+            <dt> </dt>
+            <dd> </dd>
+            <dt> </dt>
+            <dd> </dd>
+            <dt> </dt>
+            <dd> </dd>
+            <dt> </dt>
+            <dd> </dd>
+            <dt> </dt>
+            <dd> </dd>
+            <li>
+                <h3> Graphics :</h3></li>
+            <dt> canvas</dt>
+            <dd>Draw graphics, on the fly, via scripting (usually JavaScript) </dd>
+            <dt> svg</dt>
+            <dd> Draw scalable vector graphics</dd>
+            <li>
+                <h3> Semantic Elements :</h3></li>
+            <div>HTML5 comes with a number of semantic tags that let you define an element’s purpose on your site & to define different parts of a web page. They don’t affect how well the site works (for most people), or its SEO</div>
+            <dt> article</dt>
+            <dt>aside </dt>
+            <dt> details</dt>
+            <dt> figcaption</dt>
+            <dt> figure</dt>
+            <dt> footer</dt>
+            <dt> header</dt>
+            <dt> main</dt>
+            <dt> mark</dt>
+            <dt> nav</dt>
+            <dt> section</dt>
+            <dt> summary</dt>
+            <dt> time</dt>
+            <li>
+                <h3> Media Elements :</h3></li>
+            <dt> audio</dt>
+            <dd>Defines sound content </dd>
+            <dt>embed </dt>
+            <dd> Defines a container for an external (non-HTML) application</dd>
+            <dt>source </dt>
+            <dd>Defines multiple media resources for media elements video and audio </dd>
+            <dt> track</dt>
+            <dd> Defines text tracks for media elements video and audio </dd>
+            <dt> video</dt>
+            <dd> Defines video or movie</dd>
+            <li>
+                <h3 id="html5forms"> HTML5 forms :</h3></li>
+            <p>There are 14 new attributes that we’ll be looking at in this article.</p>
+            <pre>
+         
+         autofocus       formmethod
+         autocomplete    formtarget
+         required        formnovalidate
+         pattern         form
+         list            formaction
+         placeholder     formenctype
+         multiple        
+         novalidate
+     </pre> input type="submit" defines a button for submitting the form data to a form-handler.
+            <br>The form-handler is specified in the form's action attribute, and To open form result in a new browser tab, use the value "_blank":</p>
+            <p>The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data. to see the action click on submit button</p>
+            <form action="/action_page.php" target="" method="get">
+                <fieldset>
+                    <legend>Person information:</legend>
+                    First name:
+                    <br>
+                    <input type="text" name="firstname" value="varakala" required>
+                    <br> Last name:
+                    <br>
+                    <input type="text" name="lastname" value="ramoji">
+                    <br>
+                    <br>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <br>
+                    <input type="radio" name="gender" value="female"> Female
+                    <br>
+                    <input type="radio" name="gender" value="other"> Other
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <br>
+            <li>
+                <h3 id="html5deprecated"> HTML5 Depricated Elements :</h3></li>
+            <p>There are a number of tags and attributes which have been deprecated in HTML 5 or earlier versions which may still work in some browsers. For backward compatibility with existing documents, the HTML specifications may even require that these deprecated elements and attributes continue to be supported by HTML 5 compliant browsers and document processors. However, when creating web documents conforming to the HTML 5 specifications, authors should avoid these deprecated HTML tags.
+                <br>Here is a list of deprecated HTML tags to avoid using. Click on the links to get more details including valid HTML code that should be used instead.</p>
+            <dt> <b>abbr </b></dt>
+            <dt> <b> embed OR object</b></dt>
+            <dt> <b> basefont </b></dt>
+            <dt> <b> big</b></dt>
+            <dt> <b>center </b></dt>
+            <dt> <b> dir</b></dt>
+            <dt> <b> font</b></dt>
+            <dt> <b> frame</b></dt>
+            <dt> <b>frameset </b></dt>
+            <dt> <b>noframes </b></dt>
+            <dt> <b> strike </b></dt>
+            <dt> <b> tt</b></dt>
+            <li>
+                <h3>HTML5 added several new input types:</h3></li>
+            <ol type="1">
+                <li> <b>color </b></li>
+                <li> <b>date </b></li>
+                <li> <b> datetime-local.</b></li>
+                <li> <b>email </b></li>
+                <li> <b>month </b></li>
+                <li> <b>number </b></li>
+                <li> <b>range </b></li>
+                <li> <b> search</b></li>
+                <li> <b>tel </b></li>
+                <li> <b> url</b></li>
+                <li> <b>week </b></li>
+            </ol>
+            <h3 id="inputelementts"> HTML5  Form Input Elements :-</h3>
+            <form action="" method="" autocomplete="on">
+                1.Select your favorite color:
+                <input type="color" name="favcolor">
+                <br>
+                <br> 2.Birthday:
+                <input type="date" name="bday">
+                <br>
+                <br> 3.Enter a date before 1980-01-01:
+                <input type="date" name="bday" max="1979-12-31">
+                <br>
+                <br> 4.Enter a date after 2000-01-01:
+                <input type="date" name="bday" min="2000-01-02">
+                <br>
+                <br> 5.Birthday (date and time):
+                <input type="datetime-local" name="bdaytime">
+                <br>
+                <br> 6.E-mail:
+                <input type="email" name="email" required="">
+                <br>
+                <br> 7.Birthday (month and year):
+                <input type="month" name="bdaymonth" readonly="">
+                <br>
+                <br> 8.Quantity (between 1 and 5):
+                <input type="number" name="quantity" min="1" max="5">
+                <br>
+                <br> 9.Quantity:
+                <input type="number" name="points" min="0" max="100" step="10" value="30">
+                <input type="range" name="points" min="0" max="10">
+                <br>
+                <br> 10.Search Google:
+                <input type="search" name="googlesearch">
+                <br>
+                <br> 11.Telephone:
+                <input type="tel" name="usrtel" disabled>
+                <br>
+                <br> 12.Select a time:
+                <input type="time" name="usr_time">
+                <br>
+                <br> 13.Add your homepage:
+                <input type="url" name="homepage">
+                <br>
+                <br> 14.Select a week:
+                <input type="week" name="week_year">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+            <br>
+            <h2 id="entities">HTML Entities</h2>
+            <table style="text-align: center">
+                <tbody>
+                    <tr>
+                        <th>Result</th>
+                        <th>Description</th>
+                        <th>Entity Name</th>
+                        <th>Entity Number</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 29px"></td>
+                        <td style="height: 29px">non-breaking space</td>
+                        <td style="height: 29px">&amp;nbsp;</td>
+                        <td style="height: 29px">&amp;#160;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>less than</td>
+                        <td>&amp;lt;</td>
+                        <td>&amp;#60;</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>greater than</td>
+                        <td>&amp;gt;</td>
+                        <td>&amp;#62;</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>ampersand</td>
+                        <td>&amp;amp;</td>
+                        <td>&amp;#38;</td>
+                    </tr>
+                    <tr>
+                        <td>"</td>
+                        <td>double quotation mark </td>
+                        <td>&amp;quot;</td>
+                        <td>&amp;#34;</td>
+                    </tr>
+                    <tr>
+                        <td>'</td>
+                        <td>single quotation mark (apostrophe) </td>
+                        <td>&amp;apos;</td>
+                        <td>&amp;#39;</td>
+                    </tr>
+                    <tr>
+                        <td>¢</td>
+                        <td>cent</td>
+                        <td>&amp;cent;</td>
+                        <td>&amp;#162;</td>
+                    </tr>
+                    <tr>
+                        <td>£</td>
+                        <td>pound</td>
+                        <td>&amp;pound;</td>
+                        <td>&amp;#163;</td>
+                    </tr>
+                    <tr>
+                        <td>¥</td>
+                        <td>yen</td>
+                        <td>&amp;yen;</td>
+                        <td>&amp;#165;</td>
+                    </tr>
+                    <tr>
+                        <td>€</td>
+                        <td>euro</td>
+                        <td>&amp;euro;</td>
+                        <td>&amp;#8364;</td>
+                    </tr>
+                    <tr>
+                        <td>©</td>
+                        <td>copyright</td>
+                        <td>&amp;copy;</td>
+                        <td>&amp;#169;</td>
+                    </tr>
+                    <tr>
+                        <td>®</td>
+                        <td>registered trademark</td>
+                        <td>&amp;reg;</td>
+                        <td>&amp;#174;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ol>
+    </div>
+    <!-- HTML5 elements content  ends-->
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Create</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Battambang' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Battambang';font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="form-horizontal" method="post">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Create Recipe
+                        <a href="/" class="pull-right">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </a>
+                    </legend>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="name">Recipe Name</label>
+                        <div class="col-md-4">
+                            <input id="name" name="name" type="text" placeholder="Enter Name" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="description">Description</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" rows="10" id="description" name="description"></textarea>
+                        </div>
+                    </div>
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="ingredients">Ingredients</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" rows="5" id="ingredients" name="ingredients"></textarea>
+                            <span class="help-block">Enter ingredients seperated with comma </span>  
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="time_taken">Time taken</label>
+                        <div class="col-md-4">
+                            <input id="time_taken" name="time_taken" type="number" placeholder="Enter time in minutes" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="difficulty">Difficulty</label>
+                        <div class="col-md-4">
+                            <select id="difficulty" name="difficulty" class="form-control">
+                                <% difficulties.forEach((d, i) => { %>
+                                    <option value="<%=i%>"><%=d%></option>
+                                <% }) %>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="submit"></label>
+                        <div class="col-md-8">
+                            <button id="submit" type="submit" name="submit" class="btn btn-success">Submit</button>
+                            <button id="reset" name="reset" type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>    
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>

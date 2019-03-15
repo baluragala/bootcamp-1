@@ -1,0 +1,22 @@
+{
+  "name": "chocoloate-store",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "start": "concurrently \"json-server --watch db.json --port 4000 --delay 2000 --static ./public\" \"react-scripts start\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "json-server": "^0.12.1"
+  }
+}

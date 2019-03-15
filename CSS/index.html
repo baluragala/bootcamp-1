@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Project</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600" rel="stylesheet">
+</head>
+
+<body>
+    <div class="columnnav menunav menupart">
+        <ol type="1">
+            <li><a class="anchor" href="#css">What is CSS?</a></li>
+            <li><a class="anchor" href="#csssyntax"> CSS Syntax</a></li>
+            <li><a class="anchor" href="#ways">  Ways to add CSS to HTML</a></li>
+            <li><a class="anchor" href="#quick">  Quick word on selectors</a></li>
+            <li><a class="anchor" href="#colorsbackgrounds"> CSS colors and backgrounds</a></li>
+            <li><a class="anchor" href="#bordersmarginpadding">Borders, Margins, Padding</a></li>
+            <li><a class="anchor" href="#boxmodel"> Box model</a></li>
+            <li><a class="anchor" href="#positionfloat">  Playing with Position and float</a></li>
+            <li> <a class="anchor" href="#textfonts">Working with Text and fonts</a></li>
+            <li> <a class="anchor" href="#align">Handling alignment with align</a></li>
+            <li> <a class="anchor" href="#textoverflow">Handling more text with overflow</a></li>
+            <li> <a class="anchor" href="#linklisttable"> Styling links, lists and tables</a></li>
+            <li> <a class="anchor" href="#quick"> Selectors in detail</a></li>
+            <li> <a class="anchor" href="#layout">CSS layout</a></li>
+            <li>
+                <a class="anchor" href="#introduction">CSS3 Introduction</a>
+                <ol type="A">
+                    <li><a class="anchor" href="#newcolorsystem">New color system</a></li>
+                    <li><a class="anchor" href="#roundedcorners"> Rounded corners</a></li>
+                    <li><a class="anchor" href="#webfonts">Web fonts</a></li>
+                    <li><a class="anchor" href="#gradiants"> Gradients</a></li>
+                    <li><a class="anchor" href="#shadows"> Shadows</a></li>
+                    <li><a class="anchor" href="#texteffects"> Text Effects</a></li>
+                    <li><a class="anchor" href="#transitions"> Transitions</a></li>
+                    <li><a class="anchor" href="#animations">  Animations</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="columnnav contentnav">
+        <div class="wrapper">
+            <h1 id="css" style="text-align: center">CSS</h1>
+            <h3 class="topic" id="css">1 . What is CSS ? </h3>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for explaining the look and display of a document any written in a markup language</p>
+            <br>
+            <h3 id="csssyntax">2 . CSS Syntax :</h3>
+            <ol type="1">
+                <li> <b>selector - </b> (selector name should not start with alphabets) points to the HTML element you we to style</li>
+                <li><b>declaration - </b> Each declaration includes a CSS property name and a value, separated by a colon Inside the curly braces separated by semicolons,declaration always ends with a semicolon</li>
+                <li> <b>selectors : </b> class, id ,attribute,value,chaild selectors,element , name, All (*) selector </li>
+                <ul>
+                    <li> property name - name of the style</li>
+                    <li>property value - value of the style</li>
+                </ul>
+            </ol>
+            <!-- CSS Syntax -->
+            <!-- Ways (4) to add CSS to HTML  -->
+            <h3 id="ways">3 . Ways (4) to add CSS to HTML :</h3>
+            <p>* we layedown 4 types in a browser priority order bellow</p>
+            <ol>
+                <li><b> Inline css</b></li>
+                <li> <b> Internal css</b> </li>
+                <li> <b> External css</b> </li>
+                <li> <b> Imported css</b> </li>
+            </ol>
+            <dt><b>1 . Inline css :</b></dt>
+            <dd>we can use style attribute of any HTML element to define style rules. These rules will be applied to that element only</dd>
+            <br>
+            <dt><b>2 . Internal css :</b></dt>
+            <dd>we can put our CSS rules inside HTML document using the style element. This tag is placed inside head tags</dd>
+            <br>
+            <dt><b>3 . External css :</b></dt>
+            <dd>The link element can be used to include an external stylesheet file in your HTML document. An external style sheet is a separate text file with .css extension. You define all the Style rules within this text file and then you can include this file in any HTML document using link element.</dd>
+            <br>
+            <dt><b>4 . Imported css :</b></dt>
+            <dd>@import is used to import an external stylesheet in a manner similar to the link element. Here we place it inside head tag again</dd>
+            <br>
+            <!-- Ways (4) to add CSS to HTML  -->
+            <!-- Quick word on selectors  starts-->
+            <h3 id="quick">4 . Quick word on selectors :</h3>
+            <p>A CSS selector is the part of a CSS rule set that actually selects the content you want to style. Lets look at all the different kinds of selectors available, with a brief description of each.</p>
+            <!-- demo-block -->
+            <div class="demo-block">
+                <h4>Block Headding...</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet,<a href="">Link inside paragraph</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve </p>
+                <input id="username" type="text" name="username" class="input-box" placeholder="Enter username">
+                <ol type="1">
+                    <li class="list-item"> list-item</li>
+                    <li class="list-item"> list-item</li>
+                    <li class="list-item"> list-item</li>
+                    <li class="list-item"> list-item</li>
+                </ol>
+                <button class="">Button</button>
+            </div>
+            <!-- demo-block -->
+            <h4>Explanation about demo(see above) block :</h4>
+            <div><b>.class selector: </b>Using class selector we prefix with dot (.) operator in styles</div>
+            <pre>
+    .demo-block{
+        background-color: #bfd0d5;
+        padding: 20px 20px;
+        max-width: 60%;
+        border-radius: 3px;
+    }
+    </pre>
+            <div><b>id selector: </b>Using id selector we prefix with hash (#) operator in styles</div>
+            <pre>
+    #username{
+        border: 1px solid #971c1c;
+        border-radius: 3px;
+    }
+    </pre>
+            <div><b>Descendant Combinator selector: </b>Using Descendant selector combine any selectors styles</div>
+            <pre>
+    .demo-block #username{
+        padding: 10px;
+    }
+    </pre>
+            <div><b>Child selector: </b>A selector that uses the child selector is similar to a selector that uses a descendant selector, except it only targets immediate child elements</div>
+            <pre>
+    .demo-block ol>.list-item{
+        color: #2e7233;
+    }
+    </pre>
+            <div><b>Attribute selector: </b>The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets:
+            </div>
+            <pre>
+    .demo-block input[type] {
+        box-shadow: 0 0 29px 2px #9b9595;
+    }
+    </pre>
+            <div><b>Pseudo-element: </b>CSS has a selector referred to as a pseudo-element and, used appropriately, it can be very useful. The only caveat is that this selector is quite different from the other examples we have considered. Let see a pseudo-element in context.
+            </div>
+            <pre>
+    .demo-block:before{
+        content: "Pseudo";
+        right: 0;
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+        height: 50px;
+        padding-top: 10px;
+        color: white;
+        position: absolute;
+        top: 0;
+        border-radius: 3px;
+        background-color: #686363;
+}
+    </pre>
+            <div><b>nth-child selector: </b>nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.here n can be a number, a keyword, or a formula.
+            </div>
+            <pre>
+    .demo-block ol .list-item:nth-child(2) {
+         background: rgba(158, 158, 158, 0.56);
+    }
+    </pre>
+            <div><b>first-letter selector: </b>The ::first-letter selector is used to add a style to the first letter of the specified selector
+            </div>
+            <pre>
+    .paragraph::first-letter { 
+         font-size: 300%;
+        color: #8A2BE2;
+    }
+    </pre>
+            <!-- Quick word on selectors  starts-->
+            <h3 id="colorsbackgrounds">5 . CSS colors and backgrounds :</h3>
+            <p>Observe the background-color & color of the text inside and border color also.</p>
+            <div class="clr-div-red">
+                <div style="">Flower</div>
+            </div>
+            <pre>
+    .clr-div-red{
+        background-color:tomato;
+        height: 60px;
+        width: 200px;
+        color:#fff;
+        text-align: center;
+        border: 4px solid #2b9332;
+        }
+        </pre>
+            <div class="clr-div-red bg-img">
+                <div style="">Flower</div>
+            </div>
+            <pre>
+    .clr-div-red.bg-img{
+        background-image: url(../assets/images/flower2.jpg);
+        background-color: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
+        </pre>
+            <h3 id="bordersmarginpadding">6 . Borders, Margins, Padding :</h3>
+            <p>Observe the margin, padding ,border & Outline of the text inside and border color also.</p>
+            <div class="spacings">
+                <div class="text" style="">division</div>
+            </div>
+            <pre>
+    .spacings{
+        height: 70px;
+        padding-top: 20px;
+        margin: 20px;
+        display: inline-block;
+        text-align: center;
+        width: 200px;
+        color: #fff;
+        background-color: rgba(60, 47, 43, 0.49);
+        border: 10px solid #87caaa;
+        border-bottom: 10px solid gray;
+        border-top: 10px solid gray;
+        }
+
+        </pre>
+            <h3 id="boxmodel">7 . Box model:</h3>
+            <p>Observe the margin, padding ,border & Outline of the box model,It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model</p>
+            <b> different parts :</b>
+            <ol>
+                <li><b> Content :</b> <span>The content of the box, where text and images appear</span></li>
+                <li><b> Padding :</b> <span>Clears an area around the content. The padding is transparent</span> </li>
+                <li> <b>Border :</b> <span> A border that goes around the padding and content</span> </li>
+                <li><b> Margin :</b> <span>Clears an area outside the border. The margin is transparent</span> </li>
+                <li> <b>Outline:</b> <span>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".</span></li>
+            </ol>
+            <b>Element Width : </b><span>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</span>
+            <p><b>Element Height :</b><span>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</span></p>
+            <div class="box">
+                <div class="text" style="">H: 60px; W: 200px; M: 20px;</div>
+            </div>
+            <pre>
+    .box{
+        height: 70px;
+        padding: 25px;
+        margin: 20px;
+        display: inline-block;
+        width: 200px;
+        border: 10px solid #87caaa;
+        outline: 5px dashed #598d59;
+        }
+
+        </pre>
+            <!-- Playing with Position and float -->
+            <h3 id="positionfloat">8 . Playing with Position and float :</h3>
+            <h3>A . Position :</h3>
+            <p>The position property defines the type of positioning methodused for an document element.
+                <br> properties will not work unless the position property is set & works depending on the position value.
+                <br> we have 5 position types</p>
+            <ol type="A">
+                <li><b>Static</b></li>
+                <p>HTML elements are positioned static by default.they will not affected by the top, bottom, left, and right properties.they positioned according to the normal flow of the page:</p>
+                <div class="layout">
+                    <div class="static">
+                        <div>static</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <li><b>Relative</b></li>
+                <p>An element with position: relative; is positioned relative to its normal position.
+                    <br>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+                <div class="layout">
+                    <div class="relative">
+                        <div>relative(top: 40px;)</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <li><b>Absolute</b></li>
+                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+                    <br> However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling</p>
+                <div class="layout abs">
+                    <div class="absolute">
+                        <div>absolute(top: 0;right: 0;)</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <li><b>Sticky</b></li>
+                <p>An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+                <div class="layout">
+                </div>
+                <div class="sticky">
+                    <div>it sticks to bottom sticky element(bottom:0px;) , scroll to bottom to see effect</div>
+                </div>
+                <br>
+                <br>
+                <li><b>Fixed</b></li>
+                <p>See top most & Right corner of window</p>
+                <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+                    <br> A fixed element does not leave a gap in the page where it would normally have been located.</p>
+                <div class="layout">
+                    <div class="fixed">
+                        <div>fixed positioned division</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </ol>
+            <h3>B . Float : <!-- overlapping --></h3>
+            <p>The float property specifies how an element should float.
+                <br> The float property is used for positioning and layout on web pages.</p>
+            <ol type="a">
+                <li><b>left</b> - The element floats to the left of its container</li>
+                <li><b>right</b> - The element floats to the right of its container</li>
+                <li><b>none</b> - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+                <li><b>inherit</b> - The element inherits the float value of its parent</li>
+            </ol>
+            <h3 class="mleft">1.float:right;</h3>
+            <p class="mleft"><img class="image1" src="assets/images/flower2.jpg" alt="Pineapple" style="width:120px;height:70px;margin-left:15px;">A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language, often also providing information about pronunciation, origin, and usage.</p>
+            <br>
+            <br>
+            <h3 class="mleft">2.float:left;</h3>
+            <p class="mleft"><img class="image2" src="assets/images/flower2.jpg" alt="Pineapple" style="width:120px;height:70px;margin-right:15px;">A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language, often also providing information about pronunciation, origin, and usage.</p>
+            <br>
+            <h3 class="mleft">3.float:none;</h3>
+            <p class="mleft"><img class="image3" src="assets/images/flower2.jpg" alt="Pineapple" style="width:120px;height:70px;margin-right:15px;">A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language, often also providing information about pronunciation, origin, and usage.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 class="mleft">4.float:none;</h3>
+            <p class="mleft"><img class="image3" src="assets/images/flower2.jpg" alt="Pineapple" style="width:120px;height:70px;margin-right:15px;">A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language, often also providing information about pronunciation, origin, and usage.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="mleft">
+                <h3>9.clear property:</h3>
+                <b>Options...</b>
+                <ol class="" type="a">
+                    <li>left <small>( No floating elements allowed on the left side.)</small></li>
+                    <li>right <small>(No floating elements allowed on the right side.)</small></li>
+                    <li>none <small>(default)</small></li>
+                    <li>inherit <small>(The element inherits the clear value of its parent.)</small></li>
+                    <li>both <small>(No floating elements allowed on either the left or the right sides.)</small></li>
+                </ol>
+            </div>
+            <br>
+            <br>
+            <h3 class="mleft">10.Clearfix :</h3>
+            <div class="mleft classdiv">
+                <div class="clearfix">
+                    <img class="image2" src="assets/images/flower2.jpg" alt="Pineapple" width="170" height="170"> A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language, often also providing information about pronunciation, origin, and usage.</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Playing with Position and float -->
+            <!-- web fonts -->
+            <!-- overflow  -->
+            <h3 id="textoverflow">11.css overflow :</h3>
+            <p>The overflow property specifies what happens if content overflows an element's box.This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+            <br><b>NOTE</b>:The overflow property only works for block elements with a specified height.
+            <p><b>The css overflow contains the following properties.</b></p>
+            <ol class="" type="a">
+                <li>Visible</li>
+                <li>Hidden</li>
+                <li>Scroll</li>
+                <li>Auto</li>
+                <li>Overflow-x</li>
+                <li>overflow-y</li>
+            </ol>
+            <div class="first">
+                <p><b> overflow:visible</b></p>
+                <div class="overflow">Content is not clipped and may be rendered outside the content box. Default value.Content is not clipped and may be rendered outside the content box. Default value.</div>
+            </div>
+            <div class="second">
+                <p><b>overflow:hidden</b></p>
+                <div class="hidden">Content is clipped if necessary to fit the content box. No scrollbars are provided. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+            </div>
+            <div class="third">
+                <p> <b>overflow:scroll</b></p>
+                <div class="scroll">
+                    <p style="min-width: 400px;">Content is clipped if necessary to fit the content box. Browsers display scrollbars whether or not any content is actually clipped. (This prevents scrollbars from appearing or disappearing when the content changes.) Printers may still print overflowing content.</p>
+                </div>
+            </div>
+            <div class="fourth">
+                <p><b>overflow:auto</b></p>
+                <div class="auto">Depends on the user agent. If content fits inside the content box, it looks the same as visible, but still establishes a new block-formatting context. Desktop browsers like Firefox provide scrollbars if content overflows.
+                </div>
+            </div>
+            <br>
+            <div class="fifth" style="clear: both">
+                <p><b>overflow-x:scroll</b></p>
+                <div class="x">
+                    <p style="min-width: 400px;">Depends on the user agent. If content fits inside the content box, it looks the same as visible, but still establishes a new block-formatting context. Desktop browsers like Firefox provide scrollbars if content overflows.</p>
+                </div>
+            </div>
+            <div class="sixth" style="margin-bottom: 50px;">
+                <p><b>overflow-y:scroll</b></p>
+                <div class="y">Depends on the user agent. If content fits inside the content box, it looks the same as visible, but still establishes a new block-formatting context. Desktop browsers like Firefox provide scrollbars if content overflows.
+                </div>
+            </div>
+            <!-- overflow  -->
+            <br>
+            <h3 style="clear: both;" id="texteffects">12.Text Effects:</h3>
+            <p>The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.</p>
+            <h4>Properties:</h4>
+            <ol class="" type="a">
+                <li>text-overflow</li>
+                <li>word-wrap</li>
+                <li>word-break</li>
+            </ol>
+            <br>
+            <div style="float: left">
+                <b>a.text-overflow: clip:-</b>
+                <p class="testover1">some long text some long text some long text</p>
+            </div>
+            <div style="float: left;margin-left: 145px;">
+                <b>b.text-overflow: ellipsis:-</b>
+                <p class="testover2">some long text some long text some long text</p>
+            </div>
+            <br>
+            <div style="clear:both;float: left">
+                <b>c.text-overflow: clip(hover):-</b>
+                <p class="testover3" style="text-overflow:clip;">some long text some long text some long text</p>
+            </div>
+            <div style="float: left;margin-left: 145px;">
+                <b>d.text-overflow: ellipsis(hover):-</b>
+                <p class="testover3" style="text-overflow:ellipsis;">some long text some long text some long text</p>
+            </div>
+            <br>
+            <div style="clear: both;float: left">
+                <b> e.Using word-wrap:break-word:- </b>
+                <p class="testword"> A book or electronic resource that listsveryveryveryveryveryvery the words of a language (typically in alphabetical order).</p>
+            </div>
+            <div style="float: left;margin-left: 125px;">
+                <b>f.Normal:-</b>
+                <p class="testwords"> A book or electronic resource that listsveryveryveryveryveryvery the words of a language (typically in alphabetical order).</p>
+            </div>
+            <!-- text overflow -->
+            <!-- links style -->
+            <br>
+            <h3 style="clear: both" id="linklisttable">13.Link Status:</h3>
+            <ol class="" type="i">
+                <li><b>a:link</b> - a normal, unvisited link</li>
+                <li><b>a:visited</b>- a link the user has visited</li>
+                <li><b>a:hover</b> - a link when the user mouses over it</li>
+                <li><b>a:active</b> - a link the moment it is clicked</li>
+            </ol>
+            <br>
+            <b>Example:</b> <span> To observe hover, click in this link</span>
+            <p><b><a href="#" target="_blank" style="margin-left: 80px;">This is a link</a></b></p>
+            <br>
+            <h3>14.List Types:</h3>
+            <ol class="">
+                <li>unordered lists (&lt;ul&gt;) - <small>list items are marked with bullets.</small></li>
+                <li>ordered lists (&lt;ol&gt;) - <small>list items are marked with numbers or letters.</small></li>
+            </ol>
+            <div style="float: left">
+                <p><b>Example of unordered lists:</b></p>
+                <p>list-style-type: circle;</p>
+                <ul class="a">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+                <p>
+                    list-style-type: square;</p>
+                <ul class="b">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </div>
+            <div class="floatright">
+                <p><b>Example of ordered lists:</b></p>
+                <p> list-style-type: upper-roman;</p>
+                <ol class="c">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+                <p>list-style-type: lower-alpha;</p>
+                <ol class="d">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </div>
+            <div style="clear:both;">
+                <b>List With Colors:</b>
+                <ol class="orderlist">
+                    <li class="orderli">Coffee</li>
+                    <li class="orderli">Tea</li>
+                    <li class="orderli">Milk</li>
+                    <li class="orderli">Coca Cola</li>
+                </ol>
+                <ul class="unorderlist">
+                    <li class="unorderli">Coffee</li>
+                    <li class="unorderli">Tea</li>
+                    <li class="unorderli">Milk</li>
+                    <li class="unorderli">Coca Cola</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <h3 style="">15.Tables</h3>
+            <p>Striped,Hoverable and thead coloured table: (observe the font-styles)</p>
+            <br>
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Release Year</th>
+                        <th>Imdb score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Shawshank Redemption</td>
+                        <td>Frank Darabont</td>
+                        <td>1994</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather</td>
+                        <td>Francis Ford Coppola</td>
+                        <td>1972</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather:(part 2)</td>
+                        <td>Francis Ford Coppola</td>
+                        <td>1974</td>
+                        <td>9.0</td>
+                    </tr>
+                    <tr>
+                        <td>The Dark Knight</td>
+                        <td>Christopher Nolon</td>
+                        <td>2008</td>
+                        <td>9.0</td>
+                    </tr>
+                    <tr>
+                        <td>12 Angry Men</td>
+                        <td>Sidney Lumet</td>
+                        <td>1957</td>
+                        <td>8.9</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <caption>Hover on Table than observe.</caption>
+            <br>
+            <br>
+            <br>
+            <p>Table with Collapsed Borders :</p>
+            <table class="table border">
+                <thead class="border">
+                    <tr>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Release Year</th>
+                        <th>Imdb score</th>
+                    </tr>
+                </thead>
+                <tbody class="border">
+                    <tr>
+                        <td>The Shawshank Redemption</td>
+                        <td>Frank Darabont</td>
+                        <td>1994</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather</td>
+                        <td>Francis Ford Coppola</td>
+                        <td>1972</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather:(part 2)</td>
+                        <td>Francis Ford Coppola</td>
+                        <td>1974</td>
+                        <td>9.0</td>
+                    </tr>
+                    <tr>
+                        <td>The Dark Knight</td>
+                        <td>Christopher Nolon</td>
+                        <td>2008</td>
+                        <td>9.0</td>
+                    </tr>
+                    <tr>
+                        <td>12 Angry Men</td>
+                        <td>Sidney Lumet</td>
+                        <td>1957</td>
+                        <td>8.9</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h3 id="align">16.Text Alignments :-</h3>
+            <b>a.Horizontal Alignment</b>
+            <ul class="list">
+                <li>text-allign:center.<small>(text displays in center)</small></li>
+                <div style="height: 25px;width: 250px; padding: 0 5px;border: 1px solid #ada9a9;margin-bottom: 25px;">
+                    <div style="text-align: center;"> center text</div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <li>text-align:left.<small>(text displays in leftside)</small></li>
+                <div style="height: 25px;width: 250px; padding: 0 5px;border: 1px solid #ada9a9;margin-bottom: 25px">
+                    <div style="text-align: right;"> right text</div>
+                </div>
+                <li>text-align:right.<small>(text displays in rightside)</small></li>
+                <div style="height: 25px;width: 250px; padding: 0 5px;border: 1px solid #ada9a9;margin-bottom: 25px">
+                    <div style="text-align: left;"> left text</div>
+                </div>
+            </ul>
+            <br>
+            <b>b.Vertical Alignment</b>
+            <div>vertical-align only applies to inline and table-cell elements: you can't use it to vertically align block-level elements.</div>
+            <ol class="" type="1">
+                <li>vertical-allign:top. <small>(text displays in top)</small></li>
+                <li>vertical-align:bottom.<small>(text displays in bottom)</small></li>
+                <li>vertical-align:middle.<small>(text displays in middle)</small></li>
+                </oil>
+                <p class="alignvertical">1.<img class="" src="assets/images/logo.png" alt="" width="100" height="100" style="vertical-align: top;" /> image with a top alignment.</p>
+                <p class="alignvertical">2.<img class="" src="assets/images/logo.png" alt="W3Schools" width="100" height="100" style="vertical-align: bottom;" /> image with a bottom alignment.</p>
+                <p class="alignvertical">3.<img class="" src="assets/images/logo.png" alt="" width="100" height="100" style="vertical-align: middle;" /> image with a middle alignment.</p>
+                <br>
+                <br>
+                <!-- transitions  starts-->
+                <h3 id="transitions">17.Transitions :</h3>
+                <p>Hover the below box to see effect. . .</p>
+                <div class="transition">
+                    <br>
+                    <br>Hover on me</div>
+                <br>
+                <b>Speed  of the Transition:</b>
+                <ol class="" type="a">
+                    <li>ease -<small> slow start, then fast, then end slowly.(default)</small></li>
+                    <li>linear - <small> same speed from start to end.</small></li>
+                    <li>ease-in - <small> slow start</small></li>
+                    <li>ease-out - <small>  slow end</small></li>
+                    <li>ease-in-out -<small> slow start and end</small></li>
+                </ol>
+                <br>
+                <p>Examples:</p>
+                <div class="transition2 transition21">linear</div>
+                <br>
+                <div class="transition2 transition23">ease-in</div>
+                <br>
+                <div class="transition2 transition24">ease-out</div>
+                <br>
+                <p>Transition with Transform:</p>
+                <div class="transition3"></div>
+                <br>
+                <div style="">
+                    <h3 id="roundedcorners">18.Rounded corners with background color:-</h3>
+                    <div>1.Rounded corners</div>
+                    <p class="rcorners1"></p>
+                </div>
+                <div>2.Rounded corners background image:-</div>
+                <div class="rightdiv" style="">
+                    <p class="rcorners3" style="background: url('assets/images/flower1.jpeg');"></p>
+                </div>
+                <div class="rightdiv">
+                    <div>3. border-radius: 50%: for the square box forms a circle:-</div>
+                    <p class="rcorners33"></p>
+                </div>
+                <div style="margin-right: 50px;">
+                    <div>4.Three values - border-radius: 30px 50px 15px:</div>
+                    <p class="rcorners22"></p>
+                </div>
+                <h3 id="animations">19.css animations :</h3>
+                <p>An animation lets an element gradually change from one style to another:-</p>
+                <div class="animationeffect"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- transitions  ends-->
+                <!-- Shadow Effects: -->
+                <h3 id="shadows">20.Shadows Effects</h3>
+                <ol type="i">
+                    <li>text-shadow</li>
+                    <li>box-shadow</li>
+                </ol>
+                <br>
+                <div><b>i.Text Shadow :</b></div>
+                <div style="float: left">
+                    <div>Text shadow with color:</div>
+                    <h3 class="tshadowcolor"><strong>Text shadow with color effect</strong></h3>
+                    <br>
+                </div>
+                <div style="clear:both;">
+                    <div>Multiple Shadow Effects:</div>
+                    <h3 class="multishadow">Multiple Shadow Effect</h3>
+                </div>
+                <br>
+                <div>Border around text:</div>
+                <h3 class="borderaroundtest">Border around text property</h3>
+                <br>
+                <div><b>ii.Box Shadow :</b></div>
+                <br>
+                <br>
+                <div class="boxshadow">box shadow</div>
+                <br>
+                <!-- Shadow Effects: -->
+                <!-- Opacity -->
+                <br>
+                <h3>21.Opacity :</h3>
+                <div class="container">
+                    <p class="mleft">Observe the different between the images with opacity 0.2 , 0.5 and 1:</p>
+                    <img class="oimage1 mleft" src="assets/images/flower2.jpg" alt="Forest">
+                    <img class="oimage2" src="assets/images/flower2.jpg" alt="Mountains">
+                    <img class="oimage3" src="assets/images/flower2.jpg" alt="Fjords">
+                    <br>
+                    <br>
+                    <b id="newcolorsystem"> New color system :</b>
+                    <p>RGBA means Red,Green,Blue,Alpha(alpha parameter a number between 0.0 to 1.0).</p>
+                    <h3>Example:</h3>
+                    <div style="background-color: rgba(255, 50, 0, 0.2);padding:18px">rgba(255, 50, 0, 0.2);</div>
+                    <div style="background-color: hsla(348, 100%, 50%, 0.4);padding:18px">hsla(348, 100%, 50%, 0.4)</div>
+                    <div style="background-color: rgb(118, 154, 182);padding:18px">rgb(118, 154, 182)</div>
+                    <div style="background-color:  hsl(348, 100%, 50%);padding:18px">hsl(348, 100%, 50%)</div>
+                    <br>
+                    <br>
+                    <div class="mleft">
+                        <h4>Transparent Box using opacity property :</h4>
+                        <div class="firstdiv">
+                            <p>opacity 0.1</p>
+                        </div>
+                        <div class="seconddiv">
+                            <p>opacity 0.3</p>
+                        </div>
+                        <div class="thirddiv">
+                            <p>opacity 0.6</p>
+                        </div>
+                        <div class="div">
+                            <p>opacity 1 (default)</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="gradiants">22.CSS gradients :</h3>
+                <ol class="" type="1">
+                    <li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+                    <li>Radial Gradients (defined by their center)</li>
+                </ol>
+                <br>
+                <p><b>1.Example of linear gradiants:</b></p>
+                <div class="gradiantseffect"></div>
+                <p><b>2.Example of radial gradiants:</b></p>
+                <div class="gradiantseffect2"></div>
+                <br>
+                <br>
+                <h3 id="webfonts">23.Web fonts :</h3>
+                <p> Web fonts allow Web designers to use fonts that are not installed on the user's computer</p>
+                <b>1 . @font-face : </b>we can define our own styles for the font
+                <ol>
+                    <li><b>font-family :</b></li><span>Defines a name for the font</span>
+                    <br>
+                    <br>
+                    <li><b>src :</b> </li><span> Defines the URL of the font file</span>
+                    <br>
+                    <br>
+                    <li><b>font-weight :</b></li><span>Defines how the font should be stretched. Default is "normal"</span>
+                    <br>
+                    <br>
+                    <li><b>font-stretch :</b></li><span></span><span>Defines how the font should be styled. Default is "normal"</span>
+                    <br>
+                    <br>
+                    <li><b>font-style :</b></li> <span>Defines the boldness of the font. Default is "normal"</span>
+                    <br>
+                    <br>
+                    <li><b>unicode-range :</b></li><span>Optional. Defines the range of UNICODE characters the font supports. Default is "U+0-10FFFF"</span>
+                </ol>
+                <h4>24 .  Another way to include web fonts (Embed Font):</h4>
+                <p>Add a link in the link tag in top of the HTML page - <b>href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"</b></p>
+                <p>Import library inside the style tag or style sheet - <b>@import url('https://fonts.googleapis.com/css?family=Roboto');</b>
+                </p>
+                <p> Add this for styling elements - <b>font-family: 'Roboto', sans-serif;</b></p>
+                <!-- web fonts -->
+                <!-- overflow  -->
+                <h3 style="clear: both;" id="layout">CSS Layout :</h3>
+                <div class="css-layout" style="width:100%; text-align: center;">
+                    <div class="col-12 navigation">
+                        <h3>Header navigation</h3> </div>
+                    <div class="col-2 side">
+                        side bar
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-6 block-1">col-6 </div>
+                        <div class="col-6 block-2"> col-6</div>
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-1 block-1" style="background-color: #80a92c">col-1 </div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                        <div class="col-1 block-2" style="background-color: #80a92c"> col-1</div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                        <div class="col-1 block-1" style="background-color: #80a92c">col-1 </div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                        <div class="col-1 block-1" style="background-color: #80a92c">col-1 </div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                        <div class="col-1 block-1" style="background-color: #80a92c">col-1 </div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                        <div class="col-1 block-1" style="background-color: #80a92c">col-1 </div>
+                        <div class="col-1 block-2" style="background-color: #5fb8ab"> col-1</div>
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-2 block-1" style="background-color: #2491c2">col-2 </div>
+                        <div class="col-2 block-2" style="background-color: #678267"> col-2</div>
+                        <div class="col-2 block-2" style="background-color: #2491c2"> col-2</div>
+                        <div class="col-2 block-2" style="background-color: #678267"> col-2</div>
+                        <div class="col-2 block-1" style="background-color: #2491c2">col-2 </div>
+                        <div class="col-2 block-2" style="background-color: #678267"> col-2</div>
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-4 block-1" style="background-color: #808080">col-4 </div>
+                        <div class="col-4 block-2" style="background-color: #c2c2c2"> col-4</div>
+                        <div class="col-4 block-2" style="background-color: #808080"> col-4</div>
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-4 block-1" style="background-color: #c2c2c2">col-4 </div>
+                        <div class="col-4 block-2" style="background-color: #808080"> col-4</div>
+                        <div class="col-4 block-2" style="background-color: #c2c2c2"> col-4</div>
+                    </div>
+                    <div class="col-10 middel-content">
+                        <div class="col-6 block-1" style="background-color: #009688">col-6 </div>
+                        <div class="col-6 block-2" style="background-color: #8b675a"> col-6</div>
+                    </div>
+                    <div class="col-12 footer-bar">col-12 </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="clearfix" style="clear: both"></div>
+                <h2 id="textfonts">Working With Text and Fonts:</h2>
+                <div style="float: left">
+                    <h5><b>Color:</b></h5>
+                    <h1 style="color: red">This is heading 1</h1>
+                </div>
+                <div style="float: right">
+                    <h5><b>Text Transform:</b></h5>
+                    <h1 style="text-transform: uppercase;">This is heading 1</h1>
+                </div>
+                <h3 style="clear: both;">Fonts:</h3>
+                <table class="fonttable">
+                    <tbody class="fonttablebody">
+                        <tr class="fontrow">
+                            <th style="width:20%">Generic family</th>
+                            <th style="width:30%">Font family</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr class="fontrow">
+                            <td>Serif</td>
+                            <td><span style="font-size:150%;font-family:Times New Roman">Times New Roman</span>
+                                <br>
+                                <span style="font-size:150%;font-family:Georgia">Georgia</span></td>
+                            <td>Serif fonts have small lines at the ends on some characters</td>
+                        </tr>
+                        <tr class="fontrow">
+                            <td>Sans-serif</td>
+                            <td><span style="font-size:150%;font-family:Arial">Arial</span>
+                                <br>
+                                <span style="font-size:150%;font-family:Verdana">Verdana</span></td>
+                            <td>"Sans" means without - these fonts do not have the lines at the ends of characters</td>
+                        </tr>
+                        <tr class="fontrow">
+                            <td>Monospace</td>
+                            <td><span style="font-size:150%;font-family:Courier New">Courier New</span>
+                                <br>
+                                <span style="font-size:150%;font-family:Lucida Console">Lucida Console</span></td>
+                            <td>All monospace characters have the same width</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--  Maim content ends -->
+</body>
+
+</html>
